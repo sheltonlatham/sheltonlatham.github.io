@@ -17,3 +17,12 @@ body {
 .contract {
     font-size: 150%;
 }
+img {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+.image, h2 {
+    text-align: center;
+    padding: 3px;
+}
