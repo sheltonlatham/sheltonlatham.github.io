@@ -1,0 +1,19 @@
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer1 {
+    text-align: center;
+    padding: 3px;
+    background-color: #6e7b88;
+}
+
+.footer2 {
+    text-align: center;
+    padding: 3px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.contract {
+    font-size: 150%;
+}
