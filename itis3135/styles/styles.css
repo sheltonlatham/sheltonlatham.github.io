@@ -1,5 +1,6 @@
 body {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: darkslategray;
 }
 
 .footer1 {
@@ -15,14 +16,27 @@ body {
 }
 
 .contract {
-    font-size: 150%;
+    font-size: 125%;
+    text-align: center;
 }
 img {
     display: block;
     width: 50%;
     margin: 0 auto;
 }
-.image, h2 {
+.image, h2, h1 {
     text-align: center;
     padding: 3px;
+}
+a:hover {
+    color: purple;
+}
+a {
+    color: white;
+}
+nav {
+    text-align: center;
+}
+.home {
+    text-align: center;
 }
