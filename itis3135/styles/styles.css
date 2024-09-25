@@ -1,6 +1,7 @@
 body {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: darkslategray;
+    color: white;
 }
 
 .footer1 {
@@ -29,7 +30,7 @@ img {
     padding: 3px;
 }
 a:hover {
-    color: purple;
+    color: gold;
 }
 a {
     color: white;
@@ -39,4 +40,11 @@ nav {
 }
 .home {
     text-align: center;
+}
+section {
+    text-align: center;
+    border-top: 1px solid gold;
+}
+section li {
+    text-align: left;
 }
