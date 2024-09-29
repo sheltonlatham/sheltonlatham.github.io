@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shelton Latham ITIS 3135 Forms page</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+    <body>
+        <header>
+            <div data-include="../components/header.html"></div>
+        </header>
+        <main>
+            <h2>Customer Feedback Form</h2>
+
+            <form action="#" method="post">
+                <!-- Name Field -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required size="40">
+                <br><br>
+
+                <!-- Phone Number Field -->
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                <br><br>
+
+                <!-- Email Field -->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <br><br>
+
+                <!-- Checkbox Field -->
+                <label>Services Interested In:</label><br>
+                <input type="checkbox" id="service1" name="service" value="Web Design">
+                <label for="service1">Web Design</label><br>
+                <input type="checkbox" id="service2" name="service" value="Furniture">
+                <label for="service2">Custom Furniture</label><br>
+                <input type="checkbox" id="service3" name="service" value="Custom">
+                <label for="service3">Custom made item</label>
+                <br><br>
+
+                <!-- Radio Buttons -->
+                <label>Preferred Contact Method:</label><br>
+                <input type="radio" id="contact-email" name="contact-method" value="Email" required>
+                <label for="contact-email">Email</label><br>
+                <input type="radio" id="contact-phone" name="contact-method" value="Phone">
+                <label for="contact-phone">Phone</label>
+                <br><br>
+
+                <!-- Dropdown Menu -->
+                <label for="budget">Project Budget:</label>
+                <select id="budget" name="budget">
+                <option value="">Select your budget</option>
+                <option value="1000">Less than $1,000</option>
+                <option value="5000">$1,000 - $5,000</option>
+                <option value="10000">More than $5,000</option>
+                </select>
+                <br><br>
+
+                <!-- Reset and Submit Buttons -->
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </form>
+
+        </main>
+<footer class = "footer1">
+    <div data-include="../components/footer.html"></div>
+</footer>
+        <script src="../scripts/HTMLInclude.min.js"></script>
+    </body>
+</html>
