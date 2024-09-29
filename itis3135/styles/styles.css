@@ -2,6 +2,7 @@ body {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: darkslategray;
     color: white;
+    min-height: auto;
 }
 
 .footer1 {
@@ -48,3 +49,23 @@ section {
 section li {
     text-align: left;
 }
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  table th {
+    background-color: #333;
+    color: white;
+  }
+  table td {
+    color: black;
+    text-align: center;
+  }
+  table tr:nth-child(even) {
+    background-color: #B3BFB8;
+  }
+  table tr:nth-child(odd) {
+    background-color: #F0F7F4;
+  }
+  
+  
