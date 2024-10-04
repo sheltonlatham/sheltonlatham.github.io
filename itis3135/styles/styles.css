@@ -4,6 +4,12 @@ body {
     color: white;
     min-height: auto;
 }
+main {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+
+}
 
 .footer1 {
     text-align: center;
@@ -67,8 +73,7 @@ table {
   table tr:nth-child(odd) {
     background-color: #F0F7F4;
   }
-  /* Style the form container */
-form {
+  form {
     width: 100%;
     max-width: 600px;
     margin: auto;
@@ -78,14 +83,12 @@ form {
     background-color: #f9f9f9;
   }
   
-  /* Style the labels */
   label {
     font-size: 16px;
     color: #333;
     font-weight: bold;
   }
   
-  /* Style the input fields */
   input[type="text"], input[type="tel"], input[type="email"], select {
     width: 100%;
     padding: 10px;
@@ -95,12 +98,10 @@ form {
     box-sizing: border-box;
   }
   
-  /* Style the checkboxes and radio buttons */
   input[type="checkbox"], input[type="radio"] {
     margin-right: 8px;
   }
   
-  /* Style the buttons */
   button {
     padding: 10px 15px;
     font-size: 16px;
@@ -110,21 +111,35 @@ form {
     cursor: pointer;
   }
   
-  /* Reset button styling */
   button[type="reset"] {
     background-color: #444;
     color: white;
   }
   
-  /* Submit button styling */
   button[type="submit"] {
     background-color: #4CAF50; /* Green background */
     color: white;             /* White text */
   }
   
-  /* Hover effect for buttons */
   button:hover {
     opacity: 0.9;
   }
   
-  
+  @media screen and (min-width: 981px) and (max-width: 1400px) {
+    #colorbox {
+        background-color: yellow;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 980px) {
+    #colorbox {
+        background-color: orange;
+    }
+}
+
+
+@media screen and (min-width: 370px) and (max-width: 600px) {
+    #colorbox {
+        background-color: red;
+    }
+}
