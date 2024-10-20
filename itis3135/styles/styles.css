@@ -74,8 +74,6 @@ table {
     background-color: #F0F7F4;
   }
   form {
-    width: 100%;
-    max-width: 600px;
     margin: auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -87,6 +85,10 @@ table {
     font-size: 16px;
     color: #333;
     font-weight: bold;
+  }
+
+  .tagline {
+    text-align: center;
   }
   
   input[type="text"], input[type="tel"], input[type="email"], select {
