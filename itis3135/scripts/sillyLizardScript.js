@@ -18,17 +18,17 @@ function greetUser() {
 
 function displayPolygon() {
     let number = Math.abs(Math.round(Number(document.getElementById("favoriteNumber").value)));
-    const polygonNames = ["monogon", "digon", "trigon", "tetragon", "pentagon", "hexagon", "heptagon", "octagon", "nonagon", "decagon"];
+    const polygonNames = ["monogon", "digon", "triangle", "quadrilateral", "pentagon", "hexagon", "heptagon", "octagon", "nonagon", "decagon"];
     
-    if (number >= 0 && number < polygonNames.length) {
-        document.getElementById("polygonDisplay").innerText = `That's a ${polygonNames[number]}!`
+    if (number >= 1 && number < polygonNames.length) {
+        document.getElementById("polygonDisplay").innerText = `That's a ${polygonNames[number - 1]}!`;
     } else {
-        document.getElementById("polygonDisplay").innerText = `Please enter a valid number 0 - 10`
+        document.getElementById("polygonDisplay").innerText = `Please enter a valid number 0 - 10`;
     }
 }
 
 function firstFunction() {
-   document.getElementById("lizardJokeDisplay").innerText = "How many lizards does it take to screw in na light bulb? ... A Chemeleon!"
+   document.getElementById("lizardJokeDisplay").innerText = "How many lizards does it take to screw in na light bulb? ... A Chemeleon!";
 }
 
 function convertToLizardLengths() {
