@@ -1,13 +1,3 @@
-document.getElementById("introForm").addEventListener("submit", function(event) {
-    event.preventDefault(); 
-
-    if (document.getElementById("agree").checked) {
-        displayIntroPage(); 
-    } else {
-        alert("Please agree to the terms before submitting.");
-    }
-});
-
 function displayIntroPage() {
     const name = document.getElementById("name").value;
     const mascot = document.getElementById("mascot").value;
@@ -21,9 +11,7 @@ function displayIntroPage() {
     const anythingElse = document.getElementById("anythingElse").value;
 
     let courses = "";
-    document.querySelectorAll(".courseField").forEach(course => {
-        courses += `<li>${course.value}</li>`;
-    });
+    document.querySelectorAll(".courseField").forEach(course => courses += `<li>${course.value}</li>`);
 
     const introContent = `
         <h2>${name}'s Introduction Page</h2>
@@ -45,6 +33,16 @@ function displayIntroPage() {
 
     document.getElementById("introForm").innerHTML = introContent;
 }
+
+document.getElementById("introForm").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+
+    if (document.getElementById("agree").checked) {
+        displayIntroPage(); 
+    } else {
+        alert("Please agree to the terms before submitting.");
+    }
+});
 
 function addCourseField() {
     const coursesContainer = document.getElementById("coursesContainer");
