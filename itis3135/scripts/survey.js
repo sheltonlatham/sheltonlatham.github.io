@@ -11,7 +11,10 @@ function displayIntroPage() {
     const anythingElse = document.getElementById("anythingElse").value;
 
     let courses = "";
-    document.querySelectorAll(".courseField").forEach(course => courses += `<li>${course.value}</li>`);
+    document.querySelectorAll(".courseField").forEach((course) => {
+        courses += `<li>${course.value}</li>`;
+    });
+    
 
     const introContent = `
         <h2>${name}'s Introduction Page</h2>
