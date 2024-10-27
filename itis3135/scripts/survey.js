@@ -34,10 +34,13 @@ function displayIntroPage() {
         <button onclick="resetForm()">Reset</button>
     `;
 
-    document.getElementById("introForm").innerHTML = introContent;
+    document.getElementById("introForm").style.display = "none";
+    const introDisplay = document.getElementById("introDisplay");
+    introDisplay.innerHTML = introContent;
+    introDisplay.style.display = "block";
 }
 
-document.getElementById("introForm").addEventListener("submit", function(event) {
+document.getElementById("introForm").addEventListener("submit", (event) => {
     event.preventDefault(); 
 
     if (document.getElementById("agree").checked) {
@@ -69,9 +72,8 @@ function addCourseField() {
 
 function resetForm() {
     document.getElementById("introForm").reset();
-    document.getElementById("coursesContainer").innerHTML = `
-        <label>Courses currently taking:</label>
-        <button type="button" onclick="addCourseField()">Add Course</button>
-    `;
+    document.getElementById("introForm").style.display = "block";
+    document.getElementById("introDisplay").style.display = "none";
+    document.getElementById("introDisplay").innerHTML = "";
 }
 
