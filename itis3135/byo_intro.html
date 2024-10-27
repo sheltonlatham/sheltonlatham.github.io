@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="./scripts/survey.js"></script>
+    <link rel="stylesheet" href="./styles/byo-style.css">
+    <title>BYO PAGE</title>
+</head>
+<body>
+        
+    <main>
+
+        <h3>Time to BYO intro page, please fill out the form below so we can create your own page. </h3>
+
+        <form id="intro-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required value="Your Name"><br>
+
+            <label for="mascot">Mascot:</label>
+            <input type="text" id="mascot" required value="Your Mascot"><br>
+
+            <label for="image">Image (PNG or JPG):</label>
+            <input type="file" id="image" accept="image/png, image/jpeg" required><br>
+
+            <label for="imageCaption">Image Caption:</label>
+            <input type="text" id="imageCaption" required value="Your Image Caption"><br>
+
+            <label for="personalBackground">Personal Background:</label>
+            <input type="text" id="personalBackground" required value="Your Personal Background"><br>
+
+            <label for="professionalBackground">Professional Background:</label>
+            <input type="text" id="professionalBackground" required value="Your Professional Background"><br>
+
+            <label for="academicBackground">Academic Background:</label>
+            <input type="text" id="academicBackground" required value="Your Academic Background"><br>
+
+            <label for="webDevBackground">Background in Web Development:</label>
+            <input type="text" id="webDevBackground" required value="Your Web Dev Background"><br>
+
+            <label for="primaryPlatform">Primary Computer Platform:</label>
+            <input type="text" id="primaryPlatform" required value="Your Computer Platform"><br>
+
+            <div id="coursesContainer">
+                <label>Courses currently taking:</label>
+                <button type="button" onclick="addCourseField()">Add Course</button>
+            </div>
+
+            <label for="funnyThing">Funny thing?</label>
+            <input type="text" id="funnyThing" value="Your Funny Thing"><br>
+
+            <label for="anythingElse">Anything else?</label>
+            <input type="text" id="anythingElse" value="Anything else to add?"><br>
+
+            <label>
+                <input type="checkbox" id="agree" required>
+                I understand that what is on this page is not password protected, and I will not put anything here that I don’t want publicly available.
+            </label><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+
+    </main>
+
+    <script src="./scripts/HTMLInclude.min.js"></script>
+
+</body>
+</html>

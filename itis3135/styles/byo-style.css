@@ -1,0 +1,28 @@
+main {
+    background-color: darkslategray;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #f9f9f9;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px 30px 10px 5px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    color: black;
+}
+
+label, input, button {
+    display: block;
+    margin: 0.5em 0;
+}
+
+input[type="text"], input[type="file"] {
+    width: 100%;
+    padding: 0.5em;
+}
+
+h3 {
+    text-align: center;
+}
