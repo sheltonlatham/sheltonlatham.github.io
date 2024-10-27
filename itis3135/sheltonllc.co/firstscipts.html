@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/itis3135/scripts/sillyLizardScript.js"></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <title>Silly Lizard Interactive Page</title>
+    <style>
+
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            border-radius: 4px;
+            background-color: #CA9CE1;
+            color: #fff;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #357ABD;
+        }
+
+        #greetingDisplay, #polygonDisplay, #lizardJokeDisplay, #sumResult, #lizardLengthResult, #lizardFactDisplay {
+            font-size: 1.2em;
+            color: black;
+            background-color: #CA9CE1;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        body {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #333;
+            background-color: #2d4739;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        footer, #dateTimeDisplay, #calcSum, #joke, #lizardCalc, #lizardFact {
+            background-color: #DDD8C4;
+            color: black;
+            padding: 15px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+    <body>
+        <main>
+
+            <h3 id="dateTimeDisplay"></h3>
+
+            <input type="text" id="userName" placeholder="Your name">
+            <input type="text" id="userMood" placeholder="How you're feeling">
+            <button onclick="greetUser()">Submit</button>
+            <h3 id="greetingDisplay"></h3>
+
+            <input type="number" id="favoriteNumber" placeholder="Enter a number (0-10)">
+            <button onclick="displayPolygon()">Find Polygon</button>
+            <h3 id="polygonDisplay"></h3>
+
+            <h3 id="joke">Click the button to hear a Lizard Joke</h3>
+            <button onclick="firstFunction()">Tell a Joke</button>    
+            <h3 id="lizardJokeDisplay"></h3>  
+           
+
+            <h3 id="calcSum">Calculate the Sum of lizards</h3>
+            <input type="number" id="firstNumber" placeholder="Enter first number">
+            <input type="number" id="secondNumber" placeholder="Enter second number">
+            <button onclick="calculateSum()">Calculate Sum</button>
+            <h3 id="sumResult"></h3>
+
+            <h3 id="lizardCalc">Lizard Length Converter</h3>
+            <input type="number" id="userLength" placeholder="Enter length in inches">
+            <button onclick="convertToLizardLengths()">Convert to Lizard Lengths</button>
+            <h3 id="lizardLengthResult"></h3>
+            
+            <h3 id="lizardFact">Random Lizard Fact</h3>
+            <button onclick="displayLizardFact()">Get a Lizard Fact</button>
+            <h3 id="lizardFactDisplay"></h3>
+
+
+        </main>
+
+        <footer class = "footer1">
+            <div data-include="../components/footer.html"></div>
+            <a id="htmlValidator" href="#"><img src="validator_image.png" alt="HTML Validator"></a>
+            <a id="cssValidator" href="#"><img src="validator_image.png" alt="CSS Validator"></a>
+        </footer>
+
+        <script src="../scripts/HTMLInclude.min.js"></script>
+
+    </body>
+</html>
