@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+
+    <title>My Hobby - The Art of Video Games</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1B1A55;
+            color: #e0e0e0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+
+        }
+
+        header {
+            background-color: #070F2B;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 4em;
+            color: #e43f5a;
+            margin-bottom: 10px;
+            font-family: "Jersey 15", sans-serif;
+        }
+
+        nav {
+            margin-top: 15px;
+            border: 1px solid #e43f5a;
+        }
+
+        nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #e43f5a;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            display: none; 
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            background-color: #070F2B;
+        }
+
+        #home {
+            display: block;
+        }
+
+        section h2 {
+            font-size: 2em;
+            color: #e43f5a;
+            margin-bottom: 15px;
+        }
+
+        section p {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        figure {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        figure img {
+            max-width: 75%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        figcaption {
+            color: #e0e0e0;
+            font-style: italic;
+            margin-top: 5px;
+        }
+
+        footer {
+            background-color: #070F2B;
+            text-align: center;
+            padding: 10px;
+            color: #e0e0e0;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        footer a {
+            color: #e43f5a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #e43f5a;
+        }
+
+        footer div a {
+            display: inline-block;
+            margin: 5px;
+            padding: 10px 15px;
+            border: 2px solid #e43f5a;
+            color: #e0e0e0;
+            border-radius: 5px;
+            font-size: 0.9em;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        footer div a:hover {
+            background-color: #e43f5a;
+            color: #1a1a2e;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            background-color: #1f4068;
+            color: #e0e0e0;
+        }
+
+        caption {
+            font-weight: bold;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #e43f5a;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #070F2B;
+            text-align: left;
+        }
+
+        th {
+            background-color: #162447;
+            color: #e43f5a;
+        }
+
+        td {
+            background-color: #1f4068;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #243c5a;
+        }
+
+        tr:hover td {
+            background-color: #0d1a3c;
+            color: #f5a623;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            background-color: #070F2B;
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #1B1A55;
+        }
+
+        ul li h3 {
+            color: #e43f5a;
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+
+        ul li p {
+            margin: 5px 0;
+            color: #e0e0e0;
+        }
+
+        ul li p strong {
+            color: #f5a623;
+        }
+
+        .collage {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .collage figure:hover img {
+            transform: scale(1.05);
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; 
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>    
+        <h1>THE ART OF VIDEO GAMES</h1>
+        <nav>
+            <a href="#home" id="link-home">Home</a>
+            <a href="#about" id="link-about">About</a>
+            <a href="#when" id="link-when">When</a>
+            <a href="#where" id="link-where">Where</a>
+            <a href="#how" id="link-how">How</a>
+            <a href="#why" id="link-why">Why</a>
+            <a href="#ai-prompts" id="link-ai-prompts">AI Prompts</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 2nd What -->
+        <section id="home">
+            <h2>What: </h2>
+            <p>
+            At some point in your life you've played a type of video game. 
+            It's an activity millions of people around the world enjoy. 
+            While some developers make fun interesting levels to trick the player or challenge them.
+            Others make games to tell a story. 
+            A story that can invoke deep emotions and tackle deep questions. 
+            I love playing a game which sometimes it takes multiple play-throughs to get everything the developer is trying to portray.
+            Here you'll learn about some of the most groundbreaking storytelling video games and the themes of them as long with the beautiful visual aspect they bring.
+            I know it doesn't sound like a hobby but I honestly love playing games that tell a deeper story than just good gameplay.
+            </p>
+            <figure>
+                <img src="./images/RDR2.webp" alt="RDR2 arthur morgan riding his horse">
+                <figcaption>Arthur Morgan - Red Dead Redemption 2</figcaption>
+            </figure>
+            <figure>
+                <img src="./images/cyberpunk 2077.webp" alt="V stading infront of the no-tell motel">
+                <figcaption>V - Cyberpunk 2077 </figcaption>
+            </figure>
+        </section>
+
+        <!-- 1st -->
+        <section id="about">
+            <h2>About: </h2>
+            <p>
+                I want to start with almost a love letter to the game I've played more times than I can count. 
+                Cyberpunk 2077 is a video game developed by CD Projekt Red. 
+                An immersive world where mega-corporations control everything and wars between companies have put the United States into a wasteland besides from a few states.
+                You play as "V" who has been away from Night City but returns after things didn't work out in Florida.
+                After a mission goes wrong V now has to find a way to save his life while getting a better understanding of Night City and the people who call it home.
+                Playing this game is like being transported into a completely different world. You move around the world as if you're living in the city.
+                The characters feel real and have their own motivations for their actions and their goals.
+                From the city to the outback area of the game, each section has its own culture that you can further explore in missions or just walk around listening to NPCs talk.
+                I think the reason I love the game is the theme it tells without directly saying it.
+                What it means to be human even in a world where people are suited with robotic implants and lose touch with their humanity.
+                How individualism and materialism can stray people away from making deep relations with the people they meet.
+                The decisions you make have drastic consequences for others whether you decide to help them or not.
+            </p>
+            <figure>
+                <img src="./images/V cyberpunk 2077.jpg" alt="V staying next to his bike">
+                <figcaption>V looking at Night City - Cyberpunk 2077</figcaption>
+            </figure>
+            <table>
+                <caption>Reviews of Cyberpunk 2077</caption>
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Rating</th>
+                        <th>Review Quote</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>IGN</td>
+                        <td>9/10</td>
+                        <td>"Cyberpunk 2077 throws you into a beautiful, dense cityscape and offers a staggering amount of flexibility in how you choose to take it from there."</td>
+                    </tr>
+                    <tr>
+                        <td>Steam</td>
+                        <td>9/10</td>
+                        <td>
+                            "80+ hours in, and I just finished the 1st actual main mission (1st act), which only now unlocks the open world...
+                            It's that good." ~ Steam User 
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+        <!-- 3rd -->
+        <section id="when">
+            <h2>When: </h2>
+            <p>
+                Now how do games come out? How are they annouced?
+                Typically games are annouced at shows. 
+                Throughout a calander year shows are held around the world. 
+                Must are held to showcase different companies work they have planned to come out. 
+                Whether that be a trailer for the game or a tease of a project the company has in the works.
+                The most popular showcases you'll see that most companies participate in are: 
+            </p>
+            <ul>
+                <li>
+                    <h3>E3</h3>
+                    <p><strong>Date:</strong> Ran until 2021 </p>
+                    <p><strong>Location:</strong> Los Angeles, USA</p>
+                    <figure>
+                        <img src="./images/e3.png" alt="e3 logo">
+                        <figcaption>E3</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <h3>Gamescom</h3>
+                    <p><strong>Date:</strong> August (annually)</p>
+                    <p><strong>Location:</strong> Cologne, Germany</p>
+                    <figure>
+                        <img src="./images/gamescom-2022_logo_1200x675.webp" alt="gamescon convention">
+                        <figcaption>Gamescon</figcaption>
+                    </figure>
+                    
+                </li>
+                <li>
+                    <h3>Pax East/West</h3>
+                    <p><strong>Date:</strong> March and August (annually)</p>
+                    <p><strong>Location:</strong> Boston, USA and Seatlle, USA</p>
+                    <figure>
+                        <img src="./images/Pax east.webp" alt="pax east convention">
+                        <figcaption>Pax East</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <h3>Summer Game Fest</h3>
+                    <p><strong>Date:</strong> June (annually)</p>
+                    <p><strong>Location:</strong> Los Angeles, USA</p>
+                    <figure>
+                        <img src="./images/summer game fest.png" alt="game fest logo">
+                        <figcaption>Summer Game Fest</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <h3>The Game Awards</h3>
+                    <p><strong>Date:</strong> January (annually)</p>
+                    <p><strong>Location:</strong> New York, USA</p>
+                    <figure>
+                        <img src="./images/game awards.jpg" alt="game awards logo">
+                        <figcaption>The Game Awards</figcaption>
+                    </figure>
+                </li>
+            </ul>
+
+        </section>
+        <!-- 4th -->
+        <section id="where">
+            <h2>Where: </h2>
+            <p>
+                With computers advancing every year we usually see a huge jump in visual capability every three to five years.
+                I'm here to showcase how beautiful games have become and how it can heighten a story and gameplay. 
+            </p>
+            <div class="collage">
+                <figure>
+                    <img src="./images/elden ring - tree on fire.jpg" alt="Breath taking view of the world of Elden Ring">
+                    <figcaption>Elden Ring's beautiful view while the Erdtree is on fire</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/elden ring - elevator.jpg" alt="Elden Ring's attention to detail even to a elevator">
+                    <figcaption>The attention to detail even when designing an elevator to make to player feel immersed in the world</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/ori - forest.jpg" alt="Ori sitting in forest with friends">
+                    <figcaption>Even a platformer can provide immense visuals to immerse a player in the world</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/ori - storm.jpg" alt="A storm brewing over the world in Ori">
+                    <figcaption>A beautiful showcasing of world size and of a storm brewing</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/ghost - sea army.jpg" alt="A battle waiting to happen">
+                    <figcaption>A show of force as the main character Jin Sakai sees the Mongol force come to his country</figcaption>
+                </figure>
+                <figure> 
+                    <img src="./images/origins - ledge.jpg" alt="The assassain looking over the land">
+                    <figcaption>Bayek looks over Egypt in 48 BC where he will lay the foundation of the brotherhood</figcaption>
+                </figure>
+            </div>
+            <p>
+                What all these games have in common is that they let the visual aspect enchance the story and immersion of their games.
+                But even with a game like Ori that isn't an open world setting, its visual enchances the story it tells and complements the levels the player goes through to get a better understanding of the world. 
+            </p>
+
+        </section>
+
+        <!-- 5th -->
+        <section id="how">
+            <h2>How: </h2>
+            <p>
+                Now how do developers create these beautiful settings where I player can immerse themselves in the world and feel as if they're the ones walking around?
+                Miriam Bellard from Rockstar North, Rockstar the company famous for their games like the Grand Theft Auto (GTA) series and Red Dead Redemption series, explains in-depth about desgining an enviroment and spatial cinematography.
+            </p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/L27Qb20AYmc" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <ul>
+                <li><h3>Highlights</h3></li>
+                
+                <li>
+                    <p><strong>2D Screen:</strong> Since humans see in 2D working on your enviroment from 3D to 2D is important. She imphasizes <strong>using layers, repeating elements, and the shapes of the screen.</strong></p>
+                </li>
+                <li>
+                    <p><strong>Movement:</strong> Miriam explains how movement is defined by two elements, <strong>Sliency</strong> and <strong>Affordances</strong> determine what the camera and the player sees. </p>
+                </li>
+                <li>
+                    <p><strong>Time:</strong> When we walk into a room we don't see everything at first but once getting a glance over a couple times we get a grip of the room. The same applies to creating a space in a video game. <strong>Repition</strong> and <strong>Transitions</strong> allow the player to pick up a rhythm will the visuals in your game. </p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- 6th -->
+         <section id="why">
+            <h2>Why: </h2>
+            <p>
+                Video games are beautiful to me. While at first when I was young it was a place I could escape to and enojy exploring these fantasy worlds that every little boy dreamed of being in. 
+                Now they've become a place where I can explore different emotions. If I'm feeling competitive and want to test my skills I can play Call of Duty or Rainbow Six Seige, currently right now its FC 25. 
+                But If I want to sit down and enjoy an amazing story will underlying themes: Elden Ring, Cyberpunk 2077, Red Dead Redemption 2, God of War (2018), Firewatch, and many more. 
+                Or I want to build my own town where people live in and call a place home: Cult of the Lamb, Sims, and Animal Crossing.
+                While video games can get a bad rep, its truly a hobby that unites millions of people around the world and an art form. 
+                Take the company TellTale games for example. 
+                Since the early 2010's they've been making story driven games where players decide how the story goes. 
+                They were wildly successful and praised. The graphics weren't outstanding, the gameplay isn't other worldly but the story and emotion the games brought is what made people love them. 
+                Now for my own need I'll list off some of my favorite games of all time in no order: 
+            </p>
+            <div class="collage">
+                <figure>
+                    <img src="./images/borderlands 3 cover.jfif" alt="borderlands 3 cover art">
+                    <figcaption>Played this games more times I can count, I never get borded playing this.</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/black ops 2 cover.jfif" alt="black ops 2 cover art">
+                    <figcaption>My favorite call of duty of all time, was my favorite game when growing up. Ended up playing it for years.</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/batman cover.jfif" alt="batman arkham knight cover art">
+                    <figcaption>Played this last year and my god there is so much to do. You walk around and you feel like your in Gotham City. Plus you get to play as the best comic book character ever. </figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/celeste cover.jfif" alt="celeste cover art">
+                    <figcaption>What an amazing platformer that tests you on every level. But a beautiful story as you conquer the mountain</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/cyberpunk 2077 cover.jfif" alt="cyberpunk 2077 cover art">
+                    <figcaption>I've talked about this game enough you know the deal. 10/10</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/destiny 2 cover.jfif" alt="destiny 2 cover art">
+                    <figcaption>I've played this game more than I'd like to admit. There's only a handful of games that have as much time I've put into. </figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/elden ring cover.jfif" alt="elden ring cover art">
+                    <figcaption>You want a game to make you feel like a god after trying to beat a boss for days... boy do I have a game.</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/gta 5 cover.jfif" alt="GTA 5 cover art">
+                    <figcaption>In talks of being the best video game of all time. Its been like a decade since its released and it's still impressive what they did with this game.</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/minecraft cover.jfif" alt="Minecraft cover art">
+                    <figcaption>In my opinion, greatest game ever made. </figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/titanfall 2 cover.jfif" alt="titanfall 2 cover art">
+                    <figcaption>Funnest arcade shooter I've ever played. Can't believe they won't make a third one but this was literally my childhood.</figcaption>
+                </figure>
+            </div>
+
+            <p>
+                Games will always be a confort to me. 
+                No matter the stage in my life I may be in I know at the end of the day I can wind down with a game I love. 
+                It's also something I can test myself with. Everyday I'm getting better at something. Just like making this page everyday I'm getting better at Web Development. 
+                The themes of video games are something you can also apply to real life the same way you would for a movie or a TV show. 
+            </p>
+           
+         </section>
+
+         <section id="ai-prompts">
+            <p>
+                Thankfully, I didn't gave to use much AI to help me create this page and make it functional. 
+                I didn't use any AI to create any photos. 
+                The prompts I used are as followed:  
+            </p><br>
+            <p>
+                "How can I create a JS function that allows the user to switch to a different section inside the page as if it was a different page"
+            </p><br>
+            <p>
+                "How can I embed a youtube video into my html file"
+            </p><br>
+            <p>
+                Both prompts were used in CHATGPT and were adjusted to match the variables inside the html file. 
+            </p>
+         </section>
+    </main>
+
+    <footer>
+        <p>Page Built by <a href="../sheltonllc.co/index.html">Silly Lizard Enterprises</a> &copy; 2024</p>
+        <div>
+            <a href="https://validator.w3.org/">HTML Validation</a>
+            <a href="https://jigsaw.w3.org/css-validator/">CSS Validation</a>
+            <a href="https://wave.webaim.org/">Accessibility Validation</a>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        const sections = document.querySelectorAll("section");
+        const links = document.querySelectorAll("nav a");
+
+        function showSection(id) {
+            sections.forEach(section => section.style.display = "none");
+            document.getElementById(id).style.display = "block";
+        }
+
+        links.forEach(link => {
+            link.addEventListener("click", (event) => {
+                event.preventDefault();
+                const id = link.getAttribute("href").substring(1); 
+                showSection(id);
+            });
+        });
+
+        showSection("home");
+    });
+
+    </script>
+</body>
+</html>
