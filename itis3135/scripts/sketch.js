@@ -32,6 +32,13 @@ function setup() {
   );
 }
 
+function resetBall() {
+  ballPosX = width / 2;
+  ballPosY = height / 2;
+  ballSpeedX = random([-3, 3]);
+  ballSpeedY = random([-1, 1]);
+}
+
 function draw() {
   background(0);
 
@@ -131,12 +138,7 @@ function draw() {
   }
 }
 
-function resetBall() {
-  ballPosX = width / 2;
-  ballPosY = height / 2;
-  ballSpeedX = random([-3, 3]);
-  ballSpeedY = random([-1, 1]);
-}
+
 
 function mousePressed() {
   if (isLooping() === false) {
