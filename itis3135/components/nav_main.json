@@ -1,0 +1,12 @@
+[
+    {"name": "Home", "url": "./"},
+    {"name": "Introduction", "url": "introduction.html"},
+    {"name": "Contract", "url": "contract.html"},
+    {"name": "Website Evaluations", "url": "website_evaluations.html"},
+    {"name": "HTML Tables", "url": "tables.html"},
+    {"name": "Forms", "url": "forms.html"},
+    {"name": "CRAPPY", "url": "../stuff/fname.html"},
+    {"name": "BYO", "url": "../byo_intro.html"},
+    {"name": "HOBBY", "url": "../hobby/index.html"},
+    {"name": "Interactive Drawing", "url": "../drawing.html"}
+]
