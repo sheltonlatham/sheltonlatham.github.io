@@ -31,8 +31,8 @@ function loadNavigation(jsonFile, containerId, separator) {
     }
 
 document.addEventListener("DOMContentLoaded", function() {
-    loadNavigation("/itis3135/components/nav_main.json", "header-nav", " || ");
-    loadNavigation("/itis3135/components/nav_footer.json", "footer-nav", " | ");
+    loadNavigation("../components/nav_main.json", "header-nav", " || ");
+    loadNavigation("../components/nav_footer.json", "footer-nav", " | ");
     loadFooterText();
 
 });
