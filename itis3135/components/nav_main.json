@@ -8,5 +8,6 @@
     {"name": "CRAPPY", "url": "../stuff/fname.html"},
     {"name": "BYO", "url": "../byo_intro.html"},
     {"name": "HOBBY", "url": "../hobby/index.html"},
-    {"name": "Interactive Drawing", "url": "../drawing.html"}
+    {"name": "Interactive Drawing", "url": "../drawing.html"},
+    {"name": "Company", "url": "../about.html"}
 ]

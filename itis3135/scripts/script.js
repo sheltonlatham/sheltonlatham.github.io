@@ -26,12 +26,13 @@ function loadNavigation(jsonFile, containerId, separator) {
                 Certified in JS
             </a>
             <a href="../sheltonllc.co/index.html">Silly Lizard Enterprises</a> &copy; 2024
+            <a href="../about.html"><i>"Get a Grip, Dominate the Game"<i></a>
         `;
     }
 
 document.addEventListener("DOMContentLoaded", function() {
-    loadNavigation("../components/nav_main.json", "header-nav", " || ");
-    loadNavigation("../components/nav_footer.json", "footer-nav", " | ");
+    loadNavigation("/itis3135/components/nav_main.json", "header-nav", " || ");
+    loadNavigation("/itis3135/components/nav_footer.json", "footer-nav", " | ");
     loadFooterText();
 
 });

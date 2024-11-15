@@ -1,30 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Silly Lizard's Gaming Pads</title>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
         <style>
-            header, main {
+            body {
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                background-color: darkslategray;
+                color: white;
+                min-height: auto;
+            }
+            main {
+                max-width: 1200px;
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            * {
                 text-align: center;
             }
-            *{
-                background-color: #6f58c9;
-            }
-            header {
-                border-top: 1px solid black;
-                border-bottom: 1px solid black;
-                margin: 1px; 
+
+            .tagline {
+                border-top: 1px solid white;
+                border-bottom: 1px solid white;
+                margin: 5px; 
             }
             img {
-                height: 50%;
-                width: 50%;
                 display: block;
+                width: 50%;
                 margin: 0 auto;
+            }
+            .footer1 {
+                text-align: center;
+                padding: 3px;
+                background-color: #6e7b88;
+            }
+            a:hover {
+                color: gold;
+            }
+            a {
+                color: white;
+            }
+            nav {
+                text-align: center;
             }
         </style>
     </head>
     <body>
+        <header>   
+            <h1>Shelton Latham's Silly Lizard || ITIS 3135</h1>
+            <nav id="header-nav">
+    
+            </nav>   
+        </header>
         <main>
             <h2>Silly Lizard's Gaming Pads</h2>
             <p>
@@ -34,12 +64,17 @@
                 Take a look at our wide selection here on our website!
             </p>
         </main>
-        <header>
+        <header class="tagline">
             <i><strong>Get a Grip, Dominate the Game</strong></i>
         </header>
         <img src="images/mousepad.jpg" alt="mouse pad">
-    </body>
-    <footer>
+    
+        <footer class = "footer1">
+            <nav id="footer-nav">
 
-    </footer>
+            </nav>
+            <p id="footer-text"></p>
+        </footer>
+        <script src="./scripts/script.js"></script>
+    </body>
 </html>
