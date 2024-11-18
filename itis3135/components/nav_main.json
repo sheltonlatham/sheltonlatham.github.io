@@ -9,5 +9,6 @@
     {"name": "BYO", "url": "../z_archives_2/byo_intro.html"},
     {"name": "HOBBY", "url": "../hobby/index.html"},
     {"name": "Interactive Drawing", "url": "../z_archives_2/drawing.html"},
-    {"name": "Company", "url": "../z_archives_2/about.html"}
+    {"name": "Company", "url": "../z_archives_2/about.html"},
+    {"name": "Slideshow", "url": "../z_archives_2/slideshow.html"}
 ]

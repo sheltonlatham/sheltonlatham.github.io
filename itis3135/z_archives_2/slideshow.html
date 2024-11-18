@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shelton's Slideshow</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<script>
+    let slideNum = 1;
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slideshow");
+        let dots = document.getElementsByClassName("cursor");
+        let captionText = document.getElementById("caption-image");
+
+        if (n > slides.length) {
+            slideNum = 1;
+        }
+        if (n < 1) {
+            slideNum = slides.length;
+        }
+
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+
+        slides[slideNum - 1].style.display = "block";
+        dots[slideNum - 1].className += " active";
+        captionText.innerHTML = dots[slideNum - 1].alt; 
+    }
+    function plusSlides(n) {
+        showSlides(slideNum += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideNum = n);
+    }
+
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+        showSlides(slideNum);
+    });
+
+</script>
+<body>
+    <header>   
+        <h1>Shelton Latham's Silly Lizard || ITIS 3135</h1>
+        <nav id="header-nav">
+
+        </nav>   
+    </header>
+
+    <main>
+        <h1>Shelton's Slideshow</h1>
+
+        <div class="container">
+
+            <div class="slideshow">
+                <div class="numbercount">1 / 7</div>
+                <img src="../images/nebula stars.jpg" alt="stars">
+            </div>
+
+            <div class="slideshow">
+                <div class="numbercount">2 / 7</div>
+                <img src="../images/helicopter.jpg" alt="helicopter">
+            </div>
+
+            <div class="slideshow">
+                <div class="numbercount">3 / 7</div>
+                <img src="../images/elk.jpg" alt="elk in the field">
+            </div>
+
+            <div class="slideshow">
+                <div class="numbercount">4 / 7</div>
+                <img src="../images/lion.jpg" alt="lion in the field">
+            </div>
+
+            <div class="slideshow">
+                <div class="numbercount">5 / 7</div>
+                <img src="../images/thunder.jpg" alt="thunder in the dark sky">
+            </div>
+
+            <div class="slideshow">
+                <div class="numbercount">6 / 7</div>
+                <img src="../images/ocean.jpg" alt="beautiful ocean">
+            </div>
+
+            <div class="slideshow">
+                <div class="numbercount">7 / 7</div>
+                <img src="../images/nachos.jpg" alt="amazing nachos">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption">
+                <p id="caption-image"></p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img src="../images/nebula stars.jpg" alt="S - for Stars" class="cursor" onclick="currentSlide(1)">
+                </div>
+
+                <div class="column">
+                    <img src="../images/helicopter.jpg" alt="H - for Helicopter" class="cursor" onclick="currentSlide(2)">
+                </div>
+
+                <div class="column">
+                    <img src="../images/elk.jpg" alt="E - for Elk" class="cursor" onclick="currentSlide(3)">
+                </div>
+
+                <div class="column">
+                    <img src="../images/lion.jpg" alt="L - for Lion" class="cursor" onclick="currentSlide(4)">
+                </div>
+
+                <div class="column">
+                    <img src="../images/thunder.jpg" alt="T - for Thunder" class="cursor" onclick="currentSlide(5)">
+                </div>
+
+                <div class="column">
+                    <img src="../images/ocean.jpg" alt="O - for Ocean" class="cursor" onclick="currentSlide(6)">
+                </div>
+
+                <div class="column">
+                    <img src="../images/nachos.jpg" alt="N - for Nachos" class="cursor" onclick="currentSlide(7)">
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class = "footer1">
+        <nav id="footer-nav">
+
+        </nav>
+        <p id="footer-text"></p>
+    </footer>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
