@@ -6,8 +6,8 @@
     {"name": "HTML Tables", "url": "tables.html"},
     {"name": "Forms", "url": "forms.html"},
     {"name": "CRAPPY", "url": "../stuff/fname.html"},
-    {"name": "BYO", "url": "../byo_intro.html"},
+    {"name": "BYO", "url": "../z_archives_2/byo_intro.html"},
     {"name": "HOBBY", "url": "../hobby/index.html"},
-    {"name": "Interactive Drawing", "url": "../drawing.html"},
-    {"name": "Company", "url": "../about.html"}
+    {"name": "Interactive Drawing", "url": "../z_archives_2/drawing.html"},
+    {"name": "Company", "url": "../z_archives_2/about.html"}
 ]
