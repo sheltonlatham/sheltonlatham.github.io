@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz - Test Your Knowledge</title>
     <link rel="stylesheet" href="../styles/clientpage.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="../scripts/quiz.js" defer></script>
+
 </head>
 <body>
     <header>
@@ -22,15 +25,36 @@
 
     <main>
         <h2>Test your knowledge</h2>
-        <form>
-            <label for="q1">What is JavaScript used for?</label>
-            <select id="q1">
-                <option value="1">Styling websites</option>
-                <option value="2">Making websites interactive</option>
-                <option value="3">Creating documents</option>
-            </select>
-            <button type="submit">Submit</button>
-        </form>
+        <form id="quiz-form">
+            <div>
+                <label for="q1">What is JavaScript used for?</label>
+                <select id="q1">
+                    <option value="1">Styling websites</option>
+                    <option value="2">Making websites interactive</option>
+                    <option value="3">Creating documents</option>
+                </select>
+                <span id="feedback-q1"></span>
+            </div>
+            <div>
+                <label for="q2">What does CSS stand for?</label>
+                <select id="q2">
+                    <option value="1">Cascading Style Sheets</option>
+                    <option value="2">Creative Style Syntax</option>
+                    <option value="3">Centralized Styling System</option>
+                </select>
+                <span id="feedback-q2"></span>
+            </div>
+            <div>
+                <label for="q3">What is HTML used for?</label>
+                <select id="q3">
+                    <option value="1">Programming logic</option>
+                    <option value="2">Structuring content</option>
+                    <option value="3">Designing layouts</option>
+                </select>
+                <span id="feedback-q3"></span>
+            </div>
+            <button type="button" id="submit-quiz">Submit</button>
+        </form>  
     </main>
 
     <footer>
